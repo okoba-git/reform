@@ -26,6 +26,16 @@ img {
     width: 100%;
 }
 
+.l-wrapper {
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.c-center-text {
+    text-align: center;
+}
+
 /* 共通設定 */
 
 /* btn */
@@ -65,11 +75,6 @@ img {
     padding-block: 6px;
 }
 
-.l-wrapper {
-    width: 90%;
-    max-width: 960px;
-    margin: 0 auto;
-}
 
 
 /* header */
@@ -239,15 +244,197 @@ img {
     height: clamp(4rem, 0.193rem + 16.244vw, 14.813rem);
 }
 
+.p-process__card {
+    display: flex;
+    gap: 2%;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-process__title-area {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 50px;
+}
+
+
+.p-process__text-area,
+.p-process__img {
+    width: 49%;
+}
+
+.p-process__icon {
+    background: var(--reform-green);
+    font-size: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+.p-process__icon--small {
+    font-size: 1.6rem;
+}
+
 .p-process__title {
     font-size: 2.4rem;
 }
 
-.p-process__img {
-    width: clamp(21.875rem, 20.775rem + 4.695vw, 25rem);
+
+.p-process__step-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
 
+@media screen and (max-width:735px) {
+    .p-process__card {
+        flex-direction: column;
+    }
+
+    .p-process__text-area,
+    .p-process__img {
+        width: 100%;
+    }
+}
+
+/* 問い合わせページ */
+
+.p-tel-box {
+    display: flex;
+    flex-direction: column;
+    border: 10px solid var(--reform-green);
+    align-items: center;
+    padding-block: 20px;
+}
+
+.p-tel-box--big {
+    font-size: 4.8rem;
+    font-weight: bold;
+}
+
+.p-tel-box--small {
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.p-form {
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    align-items: center;
+}
+
+.p-form-area {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.p-form__item,
+.p-form__item--top {
+    display: flex;
+    gap: 78px;
+}
+
+.p-form__item-description {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.p-form__title-area {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.p-form__title-text {
+    background: var(--reform-green);
+    width: 200px;
+}
+
+.p-form__checkbox,
+.p-form__radio {
+    display: flex;
+    gap: 15px;
+}
+
+.p-form__input-area {
+    display: flex;
+    gap: 45px;
+}
+
+.p-form--red {
+    color: #DC1414;
+}
+
+.p-form__item--bottom,
+.p-form--red {
+    font-size: 1.4rem;
+}
+
+.p-text-box,
+.p-text-box--big {
+    border: 1px solid #000;
+    padding: 10px 4px;
+}
+
+.p-text-box {
+    height: 23px;
+}
+
+.p-text-box--big {
+    height: 164px;
+}
+
+
+
+@media screen and (max-width:735px) {
+
+    .p-form__item,
+    .p-form__item--top {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+
+/* お知らせ一覧 */
+
+.p-news-janru {
+    display: flex;
+    gap: 10px;
+}
+
+.p-news-janru__icon {
+    display: flex;
+    gap: 22px;
+}
+
+.p-news__box {
+    border-bottom: 1px dotted var(--reform-black);
+    padding-block: 20px;
+}
+
+.p-news-list {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* お知らせ詳細 */
+
+
+/* 事例一覧 */
+
+
+/* 事例詳細 */
+@media screen and (max-width:735px) {}
 
 @media screen and (max-width:735px) {}
