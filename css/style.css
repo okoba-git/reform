@@ -94,22 +94,28 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: clamp(3.125rem, 0.176rem + 12.582vw, 11.5rem);
     padding: 16px 4px;
     height: 100%;
 }
 
-.l-header nav {
-    height: 100%;
+.l-g-nav {
+    width: 100%;
+    font-size: clamp(1rem, 0.912rem + 0.376vw, 1.25rem);
 }
 
-.l-header__nav {
+.l-g-nav__inner {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    gap: clamp(1.25rem, 0.370rem + 3.756vw, 3.75rem);
     align-items: center;
-    height: 100%;
 }
+
+.c-header-text {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
 
 .c-main-logo {
     width: clamp(10.625rem, 8.578rem + 8.732vw, 16.438rem);
@@ -123,7 +129,8 @@ img {
 /* お問い合わせボタン */
 .l-header__info-link {
     background-color: var(--reform-yellow);
-    width: 150px;
+    /* width: 150px; */
+    width: clamp(6.25rem, 5.150rem + 4.695vw, 9.375rem);
     display: flex;
     flex-direction: column;
     align-items: center;
