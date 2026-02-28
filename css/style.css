@@ -87,17 +87,29 @@ img {
 /* hover */
 
 .c-btn--black:hover,
-.l-header__nav li:hover,
-.p-case-card:hover {
-    transition-property: opacity;
-    transition-duration: 0.2s;
+.c-header-text:hover,
+.p-case-card:hover,
+.c-logo:hover,
+.l-header__info-link:hover,
+.c-hover__text:hover,
+.c-tel-belt__num:hover {
+    transition: opacity 0.3s ease;
     opacity: 0.8;
 }
 
-.c-hover__text:hover {
-    text-decoration: underline solid rgb(51, 51, 51, 0.7);
+.c-hover__text {
+    text-decoration: underline solid var(--reform-black);
 }
 
+.c-hover__text:hover,
+.c-header-text:hover {
+    color: #6B8E23;
+
+}
+
+.c-hover__text:hover {
+    text-decoration: underline solid #6B8E23;
+}
 
 /* btn */
 .c-btn--black {
