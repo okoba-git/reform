@@ -65,7 +65,7 @@
             </div>
 
             <h2 class="c-title fz20">問い合わせフォーム</h2>
-            <p>資料請求をご希望の場合は必ず住所を入力ください。</p>
+            <p>資料請求をご希望の場合は必ず住所をご入力ください。</p>
 
             <div class="p-form">
                 <div class="p-form-area">
@@ -76,15 +76,15 @@
                         </div>
                         <div class="p-form__input-area">
                             <label class="p-form__checkbox">
-                                <input type="checkbox">
+                                <input type="checkbox" name="type" value="リフォーム相談">
                                 <p>リフォーム相談</p>
                             </label>
                             <label class="p-form__checkbox">
-                                <input type="checkbox">
+                                <input type="checkbox" name="type" value="資料請求">
                                 <p>資料請求</p>
                             </label>
                             <label class="p-form__checkbox">
-                                <input type="checkbox">
+                                <input type="checkbox" name="type" value="その他">
                                 <p>その他</p>
                             </label>
                         </div>
@@ -95,7 +95,7 @@
                             <p class="p-form--red">※必須</p>
                         </div>
                         <div class="p-form__input-area">
-                            <input type="text" class="p-text-box">
+                            <input type="text" class="p-text-box" name="name">
                         </div>
                     </div>
                     <div class="p-form__item">
@@ -104,7 +104,7 @@
                             <p class="p-form--red">※必須</p>
                         </div>
                         <div class="p-form__input-area">
-                            <input type="text" class="p-text-box">
+                            <input type="text" class="p-text-box" name="name-hiragana">
                         </div>
                     </div>
                     <div class="p-form__item">
@@ -112,7 +112,7 @@
                             <p class="p-form__title-text">郵便番号</p>
                         </div>
                         <div class="p-form__input-area">
-                            <input type="text" class="p-text-box">
+                            <input type="text" class="p-text-box" name="post-num">
                         </div>
                     </div>
                     <div class="p-form__item--top">
@@ -120,7 +120,7 @@
                             <p class="p-form__title-text">住所</p>
                         </div>
                         <div class="p-form__input-area">
-                            <input type="text" class="p-text-box">
+                            <input type="text" class="p-text-box" name="address">
                         </div>
                     </div>
 
@@ -130,7 +130,7 @@
                             <p class="p-form--red">※必須</p>
                         </div>
                         <div class="p-form__input-area">
-                            <input type="text" class="p-text-box">
+                            <input type="text" class="p-text-box" name="tel-num">
                         </div>
                     </div>
                     <div class="p-form__item">
@@ -139,7 +139,7 @@
                             <p class="p-form--red">※必須</p>
                         </div>
                         <div class="p-form__input-area">
-                            <input type="text" class="p-text-box">
+                            <input type="e-mail" class="p-text-box" name="mail">
                         </div>
                     </div>
                     <div class="p-form__item--top">
@@ -148,11 +148,11 @@
                         </div>
                         <div class="p-form__input-area">
                             <label class="p-form__radio">
-                                <input type="radio">
+                                <input type="radio" name="contact-tool">
                                 <p>電話</p>
                             </label>
                             <label class="p-form__radio">
-                                <input type="radio">
+                                <input type="radio" name="contact-tool">
                                 <p>メール</p>
                             </label>
                         </div>
@@ -198,7 +198,8 @@
     </footer>
 
 
-    <script src="js/script.js"></script>
+    <script src="js/hum.js"></script>
+    <script src="js/contact.js"></script>
 </body>
 
 </html>

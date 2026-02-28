@@ -97,6 +97,11 @@ img {
     opacity: 0.8;
 }
 
+
+.p-news-category .c-news-item__icon:hover {
+    filter: brightness(90%);
+}
+
 .c-hover__text {
     text-decoration: underline solid var(--reform-black);
 }
@@ -607,12 +612,12 @@ img {
 
 /* お知らせ一覧 */
 
-.p-news-janru {
+.p-news-category {
     display: flex;
     gap: 10px;
 }
 
-.p-news-janru__icon {
+.p-news-category__icon {
     display: flex;
     gap: 22px;
 }
