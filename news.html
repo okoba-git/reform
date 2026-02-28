@@ -54,40 +54,17 @@
     <main class="l-wrapper">
         <div class="l-section">
             <h1 class="c-title fz24">お知らせ</h1>
-            <div class="p-news-janru">
+            <div class="p-news-category">
                 <p>カテゴリーで絞る:</p>
-                <ul class="p-news-janru__icon">
-                    <li class="c-news-item__icon  fz12">すべて</li>
-                    <li class="c-news-item__icon  fz12">お知らせ</li>
-                    <li class="c-news-item__icon fz12">お得な情報</li>
+                <ul class="p-news-category__icon">
+                    <li class="c-news-item__icon  fz12" id="all">すべて</li>
+                    <li class="c-news-item__icon  fz12" id="news">お知らせ</li>
+                    <li class="c-news-item__icon fz12" id="special">お得な情報</li>
                 </ul>
             </div>
-            <dl class="p-news-list">
-                <div class="c-news-item p-news__box">
-                    <dt class="c-news-item__head">
-                        <p class="c-news-item__icon fz12">お知らせ</p>2025年12月14日
-                    </dt>
-                    <dd><a href="#">冬季休業期間のお知らせ</a></dd>
-                </div>
-                <div class="c-news-item p-news__box">
-                    <dt class="c-news-item__head">
-                        <p class="c-news-item__icon  fz12">お知らせ</p>2025年10月08日
-                    </dt>
-                    <dd><a href="#">マンションリフォーム施工事例を追加しました</a></dd>
-                </div>
-                <div class="c-news-item p-news__box">
-                    <dt class="c-news-item__head">
-                        <p class="c-news-item__icon fz12 c-special-offer">お得な情報</p>2025年08月03日
-                    </dt>
-                    <dd><a href="#">水回りリフォーム相談会のご案内</a></dd>
-                </div>
-                <div class="c-news-item p-news__box">
-                    <dt class="c-news-item__head">
-                        <p class="c-news-item__icon fz12">お知らせ</p>2025年05月20日
-                    </dt>
-                    <dd><a href="#">営業時間が変更になります</a></dd>
-                </div>
 
+            <dl class="p-news-list" id="news-area">
+                <!-- JSで書く -->
             </dl>
         </div>
 
@@ -113,7 +90,8 @@
         <small class="l-footer__copy fz12">&copy;株式会社 リカレント工務店株式会社</small>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/hum.js"></script>
+    <script src="js/news.js"></script>
 </body>
 
 </html>
