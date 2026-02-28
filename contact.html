@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>リカレント工務店株式会社</title>
+    <title>リカレント工務店株式会社 | お問い合わせ</title>
 </head>
 
 <body>
@@ -15,12 +15,12 @@
             <a href="index.html">
                 <h1 class="c-logo"><img src="img/logo.png" alt="リカレント工務店株式会社" class="c-logo__img"></h1>
             </a>
-            <nav>
-                <ul class="l-header__nav">
-                    <li><a href="process.html">リフォームの流れ</a></li>
-                    <li><a href="case.html">施工事例</a></li>
-                    <li><a href="news.html">お知らせ</a></li>
-                    <li><a href="#">会社概要</a></li>
+            <nav class="l-g-nav">
+                <ul class="l-g-nav__inner">
+                    <li class="c-header-text"><a href="process.html">リフォームの流れ</a></li>
+                    <li class="c-header-text"><a href="case.html">施工事例</a></li>
+                    <li class="c-header-text"><a href="news.html">お知らせ</a></li>
+                    <li class="c-header-text"><a href="company.html">会社概要</a></li>
                     <li>
                         <a href="contact.html" class="l-header__info-link">
                             <img src="img/icon-mail.png" alt="">
@@ -29,127 +29,176 @@
                     </li>
                 </ul>
             </nav>
+
+            <nav class="open" id="open">
+                <ul class="l-g-nav__inner">
+                    <li class="c-header-text"><a href="process.html">リフォームの流れ</a></li>
+                    <li class="c-header-text"><a href="case.html">施工事例</a></li>
+                    <li class="c-header-text"><a href="news.html">お知らせ</a></li>
+                    <li class="c-header-text"><a href="company.html">会社概要</a></li>
+                    <li>
+                        <a href="contact.html" class="l-header__info-link">
+                            <img src="img/icon-mail.png" alt="">
+                            <p>お問い合わせ</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="c-hamburger" id="hamburger">
+                <span></span>
+            </div>
         </div>
     </header>
+
     <main class="l-wrapper">
-        <p class="c-center-text">リフォームについてのご質問、ご相談について、こちらからお気軽にお問合せください。<br>
-            フォームにてお問合せいただいた内容につきましては、通常営業時間内に順次対応させていただきます。<br>
-            営業時間外（夜間や休日）にお問合せいただいた場合、回答が遅れることがございますので、ご了承ください</p>
+        <div class="l-section">
+            <h1 class="c-title fz24">問い合わせ</h1>
+            <p class="c-center-text">リフォームについてのご質問・ご相談は、電話もしくは問い合わせフォームからお気軽にお問合せください。<br>
+                フォームにてお問合せいただいた内容につきましては、通常営業時間内に順次対応させていただきます。<br>
+                営業時間外（夜間や休日）にお問合せいただいた場合、回答が遅れることがございますので、ご了承ください</p>
 
-        <h1 class="c-section__title">電話</h1>
-        <div class="p-tel-box">
-            <a href="tel:0120-123-456" class="p-tel-box--big">TEL:0120-123-456</a>
-            <p class="p-tel-box--small">【受付時間】9時～17時（土日・祝を除く）</p>
-        </div>
+            <h2 class="c-title fz20">電話</h2>
+            <div class="p-tel-box">
+                <a href="tel:0120-123-456" class="fz48 bold">TEL:0120-123-456</a>
+                <p class="fz24 bold">【受付時間】9時～17時（土日・祝を除く）</p>
+            </div>
 
-        <h1 class="c-section__title">問い合わせフォーム</h1>
+            <h2 class="c-title fz20">問い合わせフォーム</h2>
+            <p>資料請求をご希望の場合は必ず住所を入力ください。</p>
 
-        <div class="p-form">
-            <div class="p-form-area">
-                <div class="p-form__item">
-                    <div class="p-form__title-area">
-                        <p class="p-form__title-text">お問い合わせの種類</p>
-                        <p class=" p-form--red">※必須</p>
+            <div class="p-form">
+                <div class="p-form-area">
+                    <div class="p-form__item">
+                        <div class="p-form__title-area">
+                            <p class="p-form__title-text">お問い合わせの種類</p>
+                            <p class=" p-form--red">※必須</p>
+                        </div>
+                        <div class="p-form__input-area">
+                            <label class="p-form__checkbox">
+                                <input type="checkbox">
+                                <p>リフォーム相談</p>
+                            </label>
+                            <label class="p-form__checkbox">
+                                <input type="checkbox">
+                                <p>資料請求</p>
+                            </label>
+                            <label class="p-form__checkbox">
+                                <input type="checkbox">
+                                <p>その他</p>
+                            </label>
+                        </div>
                     </div>
-                    <div class="p-form__input-area">
-                        <label class="p-form__checkbox">
-                            <input type="checkbox">
-                            <p>リフォーム相談</p>
-                        </label>
-                        <label class="p-form__checkbox">
-                            <input type="checkbox">
-                            <p>資料請求</p>
-                        </label>
-                        <label class="p-form__checkbox">
-                            <input type="checkbox">
-                            <p>その他</p>
-                        </label>
+                    <div class="p-form__item">
+                        <div class="p-form__title-area">
+                            <p class="p-form__title-text">お名前</p>
+                            <p class="p-form--red">※必須</p>
+                        </div>
+                        <div class="p-form__input-area">
+                            <input type="text" class="p-text-box">
+                        </div>
                     </div>
-                </div>
-                <div class="p-form__item">
-                    <div class="p-form__title-area">
-                        <p class="p-form__title-text">お名前</p>
-                        <p class="p-form--red">※必須</p>
+                    <div class="p-form__item">
+                        <div class="p-form__title-area">
+                            <p class="p-form__title-text">ふりがな</p>
+                            <p class="p-form--red">※必須</p>
+                        </div>
+                        <div class="p-form__input-area">
+                            <input type="text" class="p-text-box">
+                        </div>
                     </div>
-                    <div class="p-form__input-area">
-                        <input type="text" class="p-text-box">
+                    <div class="p-form__item">
+                        <div class="p-form__title-area">
+                            <p class="p-form__title-text">郵便番号</p>
+                        </div>
+                        <div class="p-form__input-area">
+                            <input type="text" class="p-text-box">
+                        </div>
                     </div>
-                </div>
-                <div class="p-form__item">
-                    <div class="p-form__title-area">
-                        <p class="p-form__title-text">ふりがな</p>
-                        <p class="p-form--red">※必須</p>
+                    <div class="p-form__item--top">
+                        <div class="p-form__title-area">
+                            <p class="p-form__title-text">住所</p>
+                        </div>
+                        <div class="p-form__input-area">
+                            <input type="text" class="p-text-box">
+                        </div>
                     </div>
-                    <div class="p-form__input-area">
-                        <input type="text" class="p-text-box">
-                    </div>
-                </div>
-                <div class="p-form__item">
-                    <div class="p-form__title-area">
-                        <p class="p-form__title-text">郵便番号</p>
-                    </div>
-                    <div class="p-form__input-area">
-                        <input type="text" class="p-text-box">
-                    </div>
-                </div>
-                <div class="p-form__item--top">
-                    <div class="p-form__title-area">
-                        <p class="p-form__title-text">住所</p>
-                    </div>
-                    <div class="p-form__input-area">
-                        <input type="text" class="p-text-box">
-                    </div>
-                </div>
 
-                <div class="p-form__item">
-                    <div class="p-form__title-area">
-                        <p class="p-form__title-text">電話番号</p>
-                        <p class="p-form--red">※必須</p>
+                    <div class="p-form__item">
+                        <div class="p-form__title-area">
+                            <p class="p-form__title-text">電話番号</p>
+                            <p class="p-form--red">※必須</p>
+                        </div>
+                        <div class="p-form__input-area">
+                            <input type="text" class="p-text-box">
+                        </div>
                     </div>
-                    <div class="p-form__input-area">
-                        <input type="text" class="p-text-box">
+                    <div class="p-form__item">
+                        <div class="p-form__title-area">
+                            <p class="p-form__title-text">メールアドレス</p>
+                            <p class="p-form--red">※必須</p>
+                        </div>
+                        <div class="p-form__input-area">
+                            <input type="text" class="p-text-box">
+                        </div>
                     </div>
-                </div>
-                <div class="p-form__item">
-                    <div class="p-form__title-area">
-                        <p class="p-form__title-text">メールアドレス</p>
-                        <p class="p-form--red">※必須</p>
+                    <div class="p-form__item--top">
+                        <div class="p-form__title-area">
+                            <p class="p-form__title-text">希望の連絡方法</p>
+                        </div>
+                        <div class="p-form__input-area">
+                            <label class="p-form__radio">
+                                <input type="radio">
+                                <p>電話</p>
+                            </label>
+                            <label class="p-form__radio">
+                                <input type="radio">
+                                <p>メール</p>
+                            </label>
+                        </div>
                     </div>
-                    <div class="p-form__input-area">
-                        <input type="text" class="p-text-box">
-                    </div>
-                </div>
-                <div class="p-form__item--top">
-                    <div class="p-form__title-area">
-                        <p class="p-form__title-text">希望の連絡方法</p>
-                    </div>
-                    <div class="p-form__input-area">
-                        <label class="p-form__radio">
-                            <input type="radio">
-                            <p>電話</p>
-                        </label>
-                        <label class="p-form__radio">
-                            <input type="radio">
-                            <p>メール</p>
-                        </label>
+
+                    <div class="p-form__item">
+                        <div class="p-form__title-area">
+                            <p class="p-form__title-text">質問・連絡事項など</p>
+                        </div>
+                        <div class="p-form__input-area">
+                            <textarea name="message" id="message" class="p-text-box--big"></textarea>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="p-form__item">
-                <div class="p-form__title-area">
-                    <p class="p-form__title-text">質問・連絡事項など</p>
-                </div>
-                <div class="p-form__input-area">
-                    <textarea name="message" id="message" class="p-text-box--big"></textarea>
-                </div>
-            </div>
+            <input type="submit" value="送信する" class="c-btn--black p-form-btn">
         </div>
-        <input type="submit" value="送信する" class="c-btn--black p-form-btn">
-        </div>
-        <p class="c-center-text">当社サイトにて行った、お問い合わせなどの利用情報ならびに入力された個人情報は、サイト上に記載されている目的以外に利用することはありません。詳しくは<a href="#"
-                class="c-hover__text">プライバシーポリシー</a>をご確認ください。
+        <p class="c-center-text">当社サイトにて行った、お問い合わせなどの利用情報ならびに入力された個人情報は、サイト上に記載されている目的以外に利用することはありません。詳しくは<a
+                href="privacy.html" class="c-hover__text">プライバシーポリシー</a>をご確認ください。
         </p>
+        </div>
     </main>
+
+    <div class="c-tel-belt c-center-text">
+        <p class="fz20 bold">＼お気軽にご相談ください／</p>
+        <p class="c-tel-belt__num fz32 bold">TEL：<a href="tel:0120-123-456">0120-123-456</a></p>
+        <p>【受付時間】9時～17時（土日・祝を除く）</p>
+    </div>
+
+    <footer class="l-footer">
+        <div class="l-footer-inner">
+            <img src="img/logo.png" alt="" class="l-footer__img">
+            <div class="l-footer__text">
+                <p class="l-footer__company">株式会社 リカレント工務店</p>
+                <div class="l-footer__info">
+                    <p class="l-footer__add">〒123-4567<br>
+                        福岡県福岡市中央区XXXX12-3-45</p>
+                    <p class="l-footer__tel">TEL： <a href="tel:0120-123-456">0120-123-456</a></p>
+                </div>
+            </div>
+        </div>
+        <small class="l-footer__copy fz12">&copy;株式会社 リカレント工務店株式会社</small>
+    </footer>
+
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
