@@ -54,9 +54,10 @@
     <main class="l-wrapper">
         <div class="l-section">
             <h1 class="c-title fz24">問い合わせ</h1>
-            <p class="c-center-text">リフォームについてのご質問・ご相談は、電話もしくは問い合わせフォームからお気軽にお問合せください。<br>
+            <p class="c-center-text">ご質問・ご相談は、<span class="bold">お電話</span>もしくは<span
+                    class="bold">問い合わせフォーム</span>にてお気軽にお問合せください。<br>
                 フォームにてお問合せいただいた内容につきましては、通常営業時間内に順次対応させていただきます。<br>
-                営業時間外（夜間や休日）にお問合せいただいた場合、回答が遅れることがございますので、ご了承ください</p>
+                営業時間外（夜間や休日）にお問合せいただいた場合、回答が遅れることがございますので、ご了承ください。</p>
 
             <h2 class="c-title fz20">電話</h2>
             <div class="p-tel-box">
@@ -65,7 +66,7 @@
             </div>
 
             <h2 class="c-title fz20">問い合わせフォーム</h2>
-            <p>資料請求をご希望の場合は必ず住所をご入力ください。</p>
+            <p id="form-text">資料請求をご希望の場合は必ず住所をご入力ください。</p>
 
             <div class="p-form">
                 <div class="p-form-area">
@@ -95,7 +96,7 @@
                             <p class="p-form--red">※必須</p>
                         </div>
                         <div class="p-form__input-area">
-                            <input type="text" class="p-text-box" name="name">
+                            <input type="text" class="p-text-box" name="user-name">
                         </div>
                     </div>
                     <div class="p-form__item">
@@ -168,7 +169,7 @@
                     </div>
                 </div>
             </div>
-            <input type="submit" value="送信する" class="c-btn--black p-form-btn">
+            <input type="submit" value="送信する" class="c-btn--black p-form-btn" id="submit-btn">
         </div>
         <p class="c-center-text">当社サイトにて行った、お問い合わせなどの利用情報ならびに入力された個人情報は、サイト上に記載されている目的以外に利用することはありません。詳しくは<a
                 href="privacy.html" class="c-hover__text">プライバシーポリシー</a>をご確認ください。
