@@ -13,10 +13,15 @@ const submitBtn = document.getElementById('submit-btn');
 //（ここに警告文を表示する↓） 
 const formText = document.getElementById('form-text');
 
-
+// ここに戻る
+const formTitle = document.getElementById('form-top');
 
 submitBtn.addEventListener('click', () => {
     if ((!type[0].value) || (!name[0].value) || (!hiragana[0].value) || (!tel[0].value) || (!mail[0].value) || (!tool[0].value)) {
-        formText.innerHTML = '資料請求をご希望の場合は必ず住所をご入力ください。<br><span class="p-form--red">※入力していない項目があります。</span>';
+        formText.innerHTML = '資料請求をご希望の場合は必ず住所をご入力ください。<br><span class="p-form--red">※入力していない必須項目があります。</span>';
+        formTitle.scrollIntoView({ behavior: 'smooth' });
+    } else {
+        formText.innerHTML = '資料請求をご希望の場合は必ず住所をご入力ください。<br><span class="fz20">送信完了しました。</span>';
+        formTitle.scrollIntoView({ behavior: 'smooth' });
     }
 });
