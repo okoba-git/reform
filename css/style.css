@@ -159,7 +159,6 @@ img {
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    position: relative;
 }
 
 /* ロゴ */
@@ -220,7 +219,7 @@ img {
         display: block;
         width: 50px;
         height: 30px;
-        position: absolute;
+        position: fixed;
         right: 10px;
         top: 10px;
         z-index: 100;
@@ -251,6 +250,22 @@ img {
 
     .c-hamburger span::after {
         bottom: 15px;
+    }
+
+    .active+.c-hamburger span {
+        background: var(--reform-white);
+    }
+
+    .active+.c-hamburger span::before {
+        transform: rotate(45deg);
+        top: 0;
+        transition-duration: 300ms;
+    }
+
+    .active+.c-hamburger span::after {
+        transform: rotate(-45deg);
+        top: 0px;
+        transition-duration: 300ms;
     }
 
     /* 中身 */
@@ -681,7 +696,6 @@ img {
 
 .p-case-det {
     display: flex;
-    gap: 5%;
     gap: min(40px);
 }
 
@@ -698,7 +712,6 @@ img {
     display: flex;
     justify-content: center;
     gap: min(40px);
-    gap: 5%;
 }
 
 .p-before,
@@ -718,7 +731,6 @@ img {
 
 .p-case-det__bottom-area {
     display: flex;
-    gap: 5%;
     gap: min(40px);
 }
 
