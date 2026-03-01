@@ -681,7 +681,8 @@ img {
 
 .p-case-det {
     display: flex;
-    gap: 80px;
+    gap: 5%;
+    gap: min(40px);
 }
 
 .p-case-det__img {
@@ -693,8 +694,40 @@ img {
     min-width: 200px;
 }
 
+.p-before-and-after {
+    display: flex;
+    justify-content: center;
+    gap: min(40px);
+    gap: 5%;
+}
+
+.p-before,
+.p-after {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+
+.p-before img,
+.p-after img {
+    width: 350px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.p-case-det__bottom-area {
+    display: flex;
+    gap: 5%;
+    gap: min(40px);
+}
+
+.p-case-voice {
+    flex-basis: 50%;
+}
+
 .p-case-box {
-    width: 480px;
+    flex-basis: 50%;
     border: 5px solid var(--reform-green);
     padding: 10px;
 }
@@ -710,6 +743,8 @@ img {
 .p-case-box__item dt::after {
     content: "：";
 }
+
+
 
 .p-case__btn {
     align-self: center;
@@ -737,8 +772,13 @@ img {
     .p-case-comment__item {
         width: 100%;
     }
+
+    .p-case-det__bottom-area {
+        flex-direction: column;
+    }
+
+    .p-before-and-after {
+        flex-direction: column;
+        align-items: center;
+    }
 }
-
-
-
-@media screen and (max-width:735px) {}
