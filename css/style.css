@@ -535,6 +535,14 @@ img {
     padding-block: 20px;
 }
 
+.p-tel-box__num {
+    font-size: clamp(36px, 31.775px + 1.127vw, 48px);
+}
+
+.p-tel-box__text {
+    font-size: clamp(20px, 18.592px + 0.376vw, 24px);
+}
+
 .p-form {
     display: flex;
     flex-direction: column;
@@ -618,6 +626,8 @@ img {
 
 @media screen and (max-width:735px) {
 
+
+    .p-form__input-area,
     .p-form__item,
     .p-form__item--top {
         flex-direction: column;
@@ -648,7 +658,13 @@ img {
 }
 
 
-/* お知らせ詳細 */
+@media screen and (max-width:735px) {
+
+    .p-news-category {
+        flex-direction: column;
+    }
+
+}
 
 
 /* 事例一覧 */
@@ -657,7 +673,7 @@ img {
 .p-case__category {
     display: flex;
     justify-content: center;
-    gap: 80px;
+    gap: clamp(1.875rem, 0.775rem + 4.695vw, 5rem);
 }
 
 .p-case__category li {
