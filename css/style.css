@@ -143,7 +143,6 @@ img {
     border: 1px solid #565656;
     border-radius: 4px;
     width: 100px;
-    height: 27px;
     text-align: center;
     padding-block: 6px;
 }
@@ -610,7 +609,7 @@ img {
 
 .p-text-box {
     height: 23px;
-    width: 400px;
+    width: 400px
 }
 
 .p-text-box--big {
