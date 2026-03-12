@@ -17,41 +17,43 @@ const apartBtn = document.getElementById('apartment');
 // 下記エリアに描画
 const caseList = document.getElementById('case-list');
 
-// 描画
-let li = document.createElement('li');
-caseList.append(li);
-li.setAttribute('class', 'p-case-card c-hover__text')
 
 // 配列からHTMLを書く関数
 function updateCase(array) {
     let html = '';
     array.forEach(e => {
-        html += `<a href="case/case1.html"><img src="img/${e.img}"alt="${e.alt}" class="p-case-card__img"></a><a href="#"><p>【${e.category}】${e.title}</p><p>${e.owner}</p></a>`
+        html += `<li class="p-case-card c-hover__text"><a href="case/case1.html"><img src="img/${e.img}"alt="${e.alt}" class="p-case-card__img"></a><a href="#"><p>【${e.category}】${e.title}</p><p>${e.owner}</p></a></li>`
     });
-    li.innerHTML = html
+    caseList.innerHTML = html
 }
 
+// ボタンの背景色を変える関数
+function changeBackColor(btnName) {
+    allBtn.style.background = "none";
+    houseBtn.style.background = "none";
+    apartBtn.style.background = "none";
+    btnName.style.background = "#B0D850";
+}
+
+
+
+// デフォルト表示
 updateCase(caseArray);
+
 
 
 // クリックイベント
 allBtn.addEventListener('click', () => {
     updateCase(caseArray);
-    allBtn.style.background = "#B0D850";
-    houseBtn.style.background = "none";
-    apartBtn.style.background = "none";
+    changeBackColor(allBtn);
 })
 
 houseBtn.addEventListener('click', () => {
     updateCase(houseArray);
-    houseBtn.style.background = "#B0D850";
-    allBtn.style.background = "none";
-    apartBtn.style.background = "none";
+    changeBackColor(houseBtn);
 })
 
 apartBtn.addEventListener('click', () => {
     updateCase(apartArray);
-    apartBtn.style.background = "#B0D850";
-    houseBtn.style.background = "none";
-    allBtn.style.background = "none";
+    changeBackColor(apartBtn);
 })
