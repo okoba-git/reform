@@ -139,22 +139,6 @@ img {
     animation: slide-left 2s linear forwards;
 }
 
-@keyframes slide-left {
-    0% {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-
-    50% {
-        transform: translateX(0%);
-        opacity: 1;
-    }
-
-    100% {
-        transform: translateX(0%);
-        opacity: 1;
-    }
-}
 
 /* ニュースアイコン */
 .c-news-item__icon {
@@ -408,15 +392,23 @@ img {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    opacity: 0;
+    animation: slide-right 2s ease-out 200ms alternate forwards;
 }
+
 
 .p-mv__copy {
     font-size: clamp(1.5rem, 0.972rem + 2.254vw, 3rem);
     background-color: var(--reform-white);
     margin-top: 90px;
     text-align: end;
+    opacity: 0;
+    animation: riseAnime 3s ease-in-out 1.5s;
+    animation-fill-mode: forwards;
+}
 
-    animation: riseAnime 3.5s ease-in-out;
+.subcopy.animation {
+    animation: riseAnime 3s ease-out;
 }
 
 /* お知らせ */
@@ -470,6 +462,7 @@ img {
 
 /* リフォームの流れページ */
 
+
 .p-process__bg {
     background: url(../img/process_top.jpg) center center/cover;
     height: clamp(4rem, 0.193rem + 16.244vw, 14.813rem);
@@ -508,6 +501,15 @@ img {
 .p-process__text-area,
 .p-process__img {
     width: 49%;
+}
+
+.p-process__img {
+    white-space: nowrap;
+    opacity: 0;
+}
+
+.p-process__img.animation {
+    animation: riseAnime 1s linear 400ms forwards;
 }
 
 .p-process__icon {
@@ -861,8 +863,31 @@ img {
     }
 }
 
-@keyframes slideAnime {
-    0% {}
+@keyframes slide-left {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
 
-    100% {}
+    50% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-right {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
 }

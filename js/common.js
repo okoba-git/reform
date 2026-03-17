@@ -8,9 +8,12 @@ hum.addEventListener('click', () => {
 })
 
 
-
+// スクロールアニメーションを付けたい要素を取得
 const titles = document.querySelectorAll(".c-title");
+const processImgs = document.querySelectorAll(".p-process__img");
+const subCopy = document.querySelectorAll('.subcopy')
 
+// オプション設定
 const option = {
     root: null,
     rootMargin: "0px",
@@ -20,10 +23,17 @@ const option = {
 // コールバック関数とオプションを渡します
 const observer = new IntersectionObserver(doWhenIntersect, option);
 
-// それぞれのtitleを監視する
+
+// それぞれの要素を監視する
 titles.forEach(title => {
     observer.observe(title);
 });
+processImgs.forEach(img => {
+    observer.observe(img);
+})
+subCopy.forEach(item => {
+    observer.observe(item);
+})
 
 
 // コールバック関数
