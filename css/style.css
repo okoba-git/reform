@@ -393,7 +393,7 @@ img {
     flex-direction: column;
     align-items: flex-end;
     opacity: 0;
-    animation: slide-right 2s ease-out 200ms alternate forwards;
+    animation: slide-right 1.3s ease-out 200ms alternate forwards;
 }
 
 
@@ -403,7 +403,7 @@ img {
     margin-top: 90px;
     text-align: end;
     opacity: 0;
-    animation: riseAnime 3s ease-in-out 1.5s;
+    animation: riseAnime 2s ease-in-out 1s;
     animation-fill-mode: forwards;
 }
 

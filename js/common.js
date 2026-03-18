@@ -17,7 +17,6 @@ function scrollAnime(className) {
     });
 }
 
-
 // オプション設定
 const option = {
     root: null,
