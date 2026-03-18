@@ -20,7 +20,7 @@ function scrollAnime(className) {
 // オプション設定
 const option = {
     root: null,
-    rootMargin: "0px",
+    rootMargin: "20px",
     threshold: 0,
 }
 // インスタンス生成

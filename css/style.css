@@ -136,7 +136,7 @@ img {
 }
 
 .c-title.animation {
-    animation: slide-left 2s linear forwards;
+    animation: slide-left 1.3s linear forwards;
 }
 
 
@@ -509,7 +509,7 @@ img {
 }
 
 .p-process__img.animation {
-    animation: riseAnime 1s linear 400ms forwards;
+    animation: riseAnime 1.2s linear 100ms forwards;
 }
 
 .p-process__icon {
@@ -539,6 +539,9 @@ img {
     align-items: center;
 }
 
+.p-process_btn {
+    align-self: center;
+}
 
 @media screen and (max-width:735px) {
     .p-process__card {
