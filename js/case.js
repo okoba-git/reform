@@ -22,7 +22,7 @@ const caseList = document.getElementById('case-list');
 function updateCase(array) {
     let html = '';
     array.forEach(e => {
-        html += `<li class="p-case-card c-hover__text"><a href="case/case1.html"><img src="img/${e.img}"alt="${e.alt}" class="p-case-card__img"></a><a href="#"><p>【${e.category}】${e.title}</p><p>${e.owner}</p></a></li>`
+        html += `<li class="p-case__card c-hover__text"><a href="case/case1.html"><img src="img/${e.img}"alt="${e.alt}" class="p-case__card-img"></a><a href="#"><p>【${e.category}】${e.title}</p><p>${e.owner}</p></a></li>`
     });
     caseList.innerHTML = html
 }

@@ -413,18 +413,18 @@ img {
 
 /* お知らせ */
 
-.p-top-news__list {
+.l-top-news__list {
     display: flex;
     flex-direction: column;
     gap: clamp(1rem, 0.912rem + 0.376vw, 1.25rem);
 }
 
-.c-news-item {
+.l-top-news__item {
     display: flex;
     gap: 80px;
 }
 
-.c-news-item__head {
+.l-top-news__item--head {
     display: flex;
     gap: clamp(2.5rem, 1.620rem + 3.756vw, 5rem);
     font-weight: normal;
@@ -432,7 +432,7 @@ img {
 
 
 @media screen and (max-width:735px) {
-    .c-news-item {
+    .l-top-news__item {
         flex-direction: column;
         gap: 12px;
     }
@@ -461,12 +461,6 @@ img {
 }
 
 /* リフォームの流れページ */
-
-
-.p-process__bg {
-    background: url(../img/process_top.jpg) center center/cover;
-    height: clamp(4rem, 0.193rem + 16.244vw, 14.813rem);
-}
 
 .p-process__inner {
     display: flex;
@@ -539,7 +533,7 @@ img {
     align-items: center;
 }
 
-.p-process_btn {
+.p-process__btn {
     align-self: center;
 }
 
@@ -556,7 +550,7 @@ img {
 
 /* 問い合わせページ */
 
-.p-tel-box {
+.p-tel__box {
     display: flex;
     flex-direction: column;
     border: 10px solid var(--reform-green);
@@ -564,11 +558,11 @@ img {
     padding-block: 20px;
 }
 
-.p-tel-box__num {
+.p-tel__num {
     font-size: clamp(36px, 31.775px + 1.127vw, 48px);
 }
 
-.p-tel-box__text {
+.p-tel__box--text {
     font-size: clamp(20px, 18.592px + 0.376vw, 24px);
 }
 
@@ -579,7 +573,7 @@ img {
     align-items: flex-start;
 }
 
-.p-form-area {
+.p-form__wrapper {
     display: flex;
     flex-direction: column;
     /* 項目ごとの余白 */
@@ -605,7 +599,7 @@ img {
     gap: 13px;
 }
 
-.p-form__title-text {
+.p-form__title {
     background: var(--reform-green);
     width: 200px;
 }
@@ -617,7 +611,7 @@ img {
     gap: 15px;
 }
 
-.p-form__input-area {
+.p-form__input {
     display: flex;
     gap: 45px;
 }
@@ -626,23 +620,22 @@ img {
     color: #DC1414;
 }
 
-.p-form__item--bottom,
 .p-form--red {
     font-size: 1.4rem;
 }
 
-.p-text-box,
-.p-text-box--big {
+.p-form__text-box,
+.p-form__text-box--big {
     border: 1px solid #000;
     padding: 10px 4px;
 }
 
-.p-text-box {
+.p-form__text-box {
     height: 23px;
     width: 400px
 }
 
-.p-text-box--big {
+.p-form__text-box--big {
     height: 164px;
     width: 400px;
 }
@@ -656,7 +649,7 @@ img {
 @media screen and (max-width:735px) {
 
 
-    .p-form__input-area,
+    .p-form__input,
     .p-form__item,
     .p-form__item--top {
         flex-direction: column;
@@ -666,12 +659,12 @@ img {
 
 /* お知らせ一覧 */
 
-.p-news-category {
+.p-news__category {
     display: flex;
     gap: 10px;
 }
 
-.p-news-category__icon {
+.p-news__category-icon {
     display: flex;
     gap: 22px;
 }
@@ -681,7 +674,7 @@ img {
     padding-block: 20px;
 }
 
-.p-news-list {
+.l-news-list {
     display: flex;
     flex-direction: column;
 }
@@ -689,7 +682,7 @@ img {
 
 @media screen and (max-width:735px) {
 
-    .p-news-category {
+    .p-news__category {
         flex-direction: column;
     }
 
@@ -715,7 +708,7 @@ img {
 }
 
 
-.p-case-card-set {
+.l-case__cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     column-gap: min(40px);
@@ -723,7 +716,7 @@ img {
     align-items: center;
 }
 
-.p-case-card {
+.p-case__card {
     width: 250px;
     text-align: center;
     display: flex;
@@ -732,93 +725,92 @@ img {
     margin: 0 auto;
 }
 
-.p-case-card__img {
+.p-case__card-img {
     width: 250px;
 }
 
 
 /* 事例詳細 */
 
-.p-case-det {
+.l-case-det__main {
     display: flex;
     gap: min(40px);
 }
 
-.p-case-det__img {
+.c-case-det__img {
     max-width: 480px;
     object-fit: contain;
 }
 
-.p-case-comment__item {
+.c-case-det__point {
     min-width: 200px;
 }
 
-.p-before-and-after {
+.l-case-det__beforeafter {
     display: flex;
     justify-content: center;
     gap: min(40px);
 }
 
-.p-before,
-.p-after {
+.l-before,
+.l-after {
     display: flex;
     flex-direction: column;
     gap: 10px;
     position: relative;
 }
 
-.p-before img,
-.p-after img {
+.l-before img,
+.l-after img {
     width: 350px;
     height: 200px;
     object-fit: cover;
 }
 
-.p-case-det__bottom-area {
+.l-case-det__bottom-area {
     display: flex;
     gap: min(40px);
 }
 
-.p-case-voice {
+.c-case-det__voice {
     flex-basis: 50%;
 }
 
-.p-case-box {
+.c-case-det__box {
     flex-basis: 50%;
     border: 5px solid var(--reform-green);
     padding: 10px;
 }
 
-.p-case-box dt {
+.c-case-det__box dt {
     font-weight: normal;
 }
 
-.p-case-box__item {
+.c-case-det__box-item {
     display: flex;
 }
 
-.p-case-box__item dt::after {
+.c-case-det__box-item dt::after {
     content: "：";
 }
 
-
-
-.p-case__btn {
+.c-case__btn {
     align-self: center;
 }
 
 
 @media screen and (max-width:735px) {
-    .c-case-det__title {
-        display: flex;
+
+    .l-case-det__main {
         flex-direction: column;
     }
 
-    .p-case-det {
+    .l-case-det__beforeafter {
         flex-direction: column;
+        align-items: center;
     }
 
-    .p-case-det__img {
+    .c-case-det__img {
         width: 100%;
     }
 
@@ -830,13 +822,8 @@ img {
         width: 100%;
     }
 
-    .p-case-det__bottom-area {
+    .l-case-det__bottom-area {
         flex-direction: column;
-    }
-
-    .p-before-and-after {
-        flex-direction: column;
-        align-items: center;
     }
 }
 

@@ -17,6 +17,6 @@ const topNewsList = document.getElementById('top-news-area');
 
 let topPageHtml = '';
 for (let i = 0; i < 3; i++) {
-    topPageHtml += `<div class="c-news-item"><dt class="c-news-item__head"><p class="c-news-item__icon fz12">${allArray[i].category}</p>${allArray[i].date}</dt><dd class="c-hover__text"><a href="#">${allArray[i].title}</a></dd></div>`;
+    topPageHtml += `<div class="l-top-news__item"><dt class="l-top-news__item--head"><p class="c-news-item__icon fz12">${allArray[i].category}</p>${allArray[i].date}</dt><dd class="c-hover__text"><a href="#">${allArray[i].title}</a></dd></div>`;
 }
 topNewsList.innerHTML = topPageHtml;
