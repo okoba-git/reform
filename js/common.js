@@ -1,11 +1,13 @@
 // ハンバーガーメニュー
 
 const hum = document.getElementById('hamburger');
-const openNav = document.getElementById('open');
+const openNav = document.getElementById('js-open');
 
 hum.addEventListener('click', () => {
     openNav.classList.toggle('active');
 })
+
+
 
 // スクロールアニメの関数
 function scrollAnime(className) {
