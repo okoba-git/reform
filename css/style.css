@@ -18,6 +18,10 @@
     --space-l: 40px;
     --space-ll: 80px;
     --space-xxl: 120px;
+
+    --anim-fast: 0.3s;
+    --anim-mid: 1s;
+    --anim-slow: 1.2s;
 }
 
 
@@ -96,7 +100,7 @@ img {
 .l-header__info-link:hover,
 .c-hover__text:hover,
 .c-tel-belt__num:hover {
-    transition: opacity 0.3s ease;
+    transition: opacity var(--anim-fast) ease;
     opacity: 0.8;
 }
 
@@ -130,6 +134,10 @@ img {
     text-align: center;
 }
 
+.c-btn--center {
+    align-self: center;
+}
+
 /* 見出し */
 .c-title {
     border-bottom: 4px solid var(--reform-green);
@@ -139,7 +147,7 @@ img {
 }
 
 .c-title.animation {
-    animation: slide-left 1.3s linear forwards;
+    animation: slide-left var(--anim-slow) linear forwards;
 }
 
 
@@ -259,13 +267,13 @@ img {
     .active+.c-hamburger span::before {
         transform: rotate(45deg);
         top: 0;
-        transition-duration: 300ms;
+        transition-duration: var(--anim-fast);
     }
 
     .active+.c-hamburger span::after {
         transform: rotate(-45deg);
         top: 0px;
-        transition-duration: 300ms;
+        transition-duration: var(--anim-fast);
     }
 
     /* 中身 */
@@ -311,7 +319,7 @@ img {
 }
 
 .c-tel-belt p:first-child {
-    animation: flashAnime 500ms ease-in-out infinite;
+    animation: flashAnime var(--anim-fast) ease-in-out infinite;
 }
 
 .c-tel-belt__num {
@@ -390,7 +398,7 @@ img {
     flex-direction: column;
     align-items: flex-end;
     opacity: 0;
-    animation: slide-right 1.3s ease-out 200ms alternate forwards;
+    animation: slide-right var(--anim-slow) ease-out var(--anim-fast) alternate forwards;
 }
 
 
@@ -400,8 +408,7 @@ img {
     margin-top: var(--space-ll);
     text-align: end;
     opacity: 0;
-    animation: riseAnime 2s ease-in-out 1s;
-    animation-fill-mode: forwards;
+    animation: riseAnime 2s ease-in-out var(--anim-mid) forwards;
 }
 
 .subcopy.animation {
@@ -483,8 +490,8 @@ img {
 .p-process__title-area {
     display: flex;
     align-items: center;
-    gap: var(--space-ll);
-    margin-bottom: 50px;
+    gap: var(--space-l);
+    margin-bottom: var(--space-m);
 }
 
 
@@ -499,7 +506,7 @@ img {
 }
 
 .p-process__img.animation {
-    animation: riseAnime 1.2s linear 100ms forwards;
+    animation: riseAnime var(--anim-slow) linear var(--anim-fast) forwards;
 }
 
 .p-process__icon {
@@ -527,10 +534,6 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.p-process__btn {
-    align-self: center;
 }
 
 @media screen and (max-width:735px) {
@@ -635,11 +638,6 @@ img {
     height: 164px;
     width: 400px;
 }
-
-.p-form-btn {
-    align-self: center;
-}
-
 
 
 @media screen and (max-width:735px) {
@@ -795,10 +793,6 @@ img {
 
 .c-case-det__box-item dt::after {
     content: "：";
-}
-
-.c-case__btn {
-    align-self: center;
 }
 
 
