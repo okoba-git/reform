@@ -126,7 +126,7 @@ img {
     color: var(--reform-white);
     font-size: var(--fz-xl);
     width: 270px;
-    padding-block: 10.5px;
+    padding-block: var(--space-s);
     text-align: center;
 }
 
@@ -193,7 +193,7 @@ img {
     align-items: center;
     justify-content: center;
     background-color: var(--reform-yellow);
-    padding: 8px 15px;
+    padding: var(--space-s) 15px;
     min-width: 90px;
 }
 
@@ -303,7 +303,7 @@ img {
 
 .c-tel-belt {
     background-color: var(--reform-green);
-    padding-block: 15px;
+    padding-block: var(--space-m);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -397,7 +397,7 @@ img {
 .p-mv__copy {
     font-size: clamp(1.5rem, 0.972rem + 2.254vw, 3rem);
     background-color: var(--reform-white);
-    margin-top: 90px;
+    margin-top: var(--space-ll);
     text-align: end;
     opacity: 0;
     animation: riseAnime 2s ease-in-out 1s;
@@ -503,7 +503,6 @@ img {
 }
 
 .p-process__icon {
-    display: block;
     background: var(--reform-green);
     font-size: 3.2rem;
     display: flex;
@@ -520,7 +519,7 @@ img {
 }
 
 .p-process__title {
-    font-size: var(--fz-xl);
+    font-size: var(--fz-l);
 }
 
 
@@ -605,7 +604,7 @@ img {
 .p-form__radio {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: var(--space-m);
 }
 
 .p-form__input {
@@ -667,6 +666,8 @@ img {
 }
 
 .p-news__box {
+    display: flex;
+    gap: var(--space-l);
     border-bottom: 1px dotted var(--reform-black);
     padding-block: var(--space-m);
 }
@@ -678,6 +679,11 @@ img {
 
 
 @media screen and (max-width:735px) {
+    .p-news__box {
+        flex-direction: column;
+        gap: var(--space-s);
+    }
+
 
     .p-news__category {
         flex-direction: column;
