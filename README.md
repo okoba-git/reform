@@ -9,9 +9,9 @@
 - 2026年3月：GitHub Pagesにて公開
 
 ## 使用技術
-* HTML
+* HTML（BEM, FLOCSS）
 * CSS
-* JavaScript
+* JavaScript（DOM操作、フィルタリング、バリデーション）
 * Figma（デザイン）
 * chatGPT（画像や文章作成の補助として使用）
 
@@ -42,3 +42,5 @@
 - 各ページの微調整・ブラッシュアップ
 - 未実装ページ（会社概要、プライバシーポリシー、お知らせ詳細ページ）の実装
 - リファクタリング
+- Reactに挑戦
+- WordPress化
