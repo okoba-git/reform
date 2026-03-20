@@ -138,6 +138,16 @@ img {
     align-self: center;
 }
 
+.p-top__btn {
+    align-self: flex-end;
+}
+
+@media screen and (max-width:735px) {
+    .p-top__btn {
+        align-self: center;
+    }
+}
+
 /* 見出し */
 .c-title {
     border-bottom: 4px solid var(--reform-green);
@@ -171,15 +181,16 @@ img {
 }
 
 /* ロゴ */
-.c-logo__img {
-    height: 40px;
-    width: auto;
-}
-
 .l-gnav__inner {
     display: flex;
     align-items: center;
     gap: 30px;
+}
+
+
+.c-logo__img {
+    height: 40px;
+    width: auto;
 }
 
 .c-gnav-text {
@@ -191,8 +202,6 @@ img {
     content: "◆";
     color: var(--reform-green);
 }
-
-
 
 /* お問い合わせボタン */
 .c-gnav__info {
@@ -210,12 +219,10 @@ img {
 }
 
 /* ハンバーガーメニュー */
-
 .c-hamburger,
 .open {
     display: none;
 }
-
 
 @media screen and (max-width:810px) {
     .l-gnav {
@@ -329,9 +336,6 @@ img {
 }
 
 /* fotter */
-.c-footer {
-    background: var(--reform-beige);
-}
 
 .l-footer-inner {
     padding-block: var(--space-l);
@@ -349,6 +353,10 @@ img {
     display: flex;
     flex-direction: column;
     gap: var(--space-m);
+}
+
+.c-footer {
+    background: var(--reform-beige);
 }
 
 .c-footer__img {
@@ -371,24 +379,11 @@ img {
 }
 
 /* TOPページ */
-
-
 .p-top-section__body {
     display: flex;
     flex-direction: column;
     gap: var(--space-ll);
 }
-
-.p-top__btn {
-    align-self: flex-end;
-}
-
-@media screen and (max-width:735px) {
-    .p-top__btn {
-        align-self: center;
-    }
-}
-
 
 /* MainVisual */
 .p-mv {
@@ -400,7 +395,6 @@ img {
     opacity: 0;
     animation: slide-right var(--anim-slow) ease-out var(--anim-fast) alternate forwards;
 }
-
 
 .p-mv__copy {
     font-size: clamp(1.5rem, 0.972rem + 2.254vw, 3rem);
@@ -464,14 +458,13 @@ img {
 }
 
 /* リフォームの流れページ */
-
-.p-process__inner {
+.l-process__inner {
     display: flex;
     flex-direction: column;
     gap: 220px;
 }
 
-.p-process__card {
+.l-process__card {
     display: flex;
     gap: 2%;
     justify-content: center;
@@ -479,8 +472,7 @@ img {
     position: relative;
 }
 
-
-.p-process__card:not(:first-of-type)::before {
+.l-process__card:not(:first-of-type)::before {
     content: url(../img/arrow.svg);
     position: absolute;
     left: 0;
@@ -493,7 +485,6 @@ img {
     gap: var(--space-l);
     margin-bottom: var(--space-m);
 }
-
 
 .p-process__text-area,
 .p-process__img {
@@ -530,14 +521,8 @@ img {
 }
 
 
-.p-process__step-1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 @media screen and (max-width:735px) {
-    .p-process__card {
+    .l-process__card {
         flex-direction: column;
     }
 
@@ -565,34 +550,28 @@ img {
     font-size: clamp(20px, 18.592px + 0.376vw, 24px);
 }
 
-.p-form {
+.l-form {
     display: flex;
     flex-direction: column;
     gap: var(--space-ll);
     align-items: flex-start;
 }
 
-.p-form__wrapper {
+.l-form__wrapper {
     display: flex;
     flex-direction: column;
     /* 項目ごとの余白 */
     gap: var(--space-ll);
 }
 
-.p-form__item,
-.p-form__item--top {
+.l-form__item,
+.l-form__item--top {
     display: flex;
     align-items: flex-start;
     gap: var(--space-ll);
 }
 
-.p-form__item-description {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-s);
-}
-
-.p-form__title-area {
+.l-form__title-area {
     display: flex;
     flex-direction: column;
     gap: var(--space-s);
@@ -625,8 +604,8 @@ img {
 
 .p-form__text-box,
 .p-form__text-box--big {
-    border: 1px solid #000;
     padding: var(--space-s) 4px;
+    border: 1px solid #000;
 }
 
 .p-form__text-box {
@@ -639,19 +618,21 @@ img {
     width: 400px;
 }
 
-
 @media screen and (max-width:735px) {
 
-
     .p-form__input,
-    .p-form__item,
-    .p-form__item--top {
+    .l-form__item,
+    .l-form__item--top {
         flex-direction: column;
         gap: var(--space-s);
     }
 }
 
 /* お知らせ一覧 */
+.l-news-list {
+    display: flex;
+    flex-direction: column;
+}
 
 .p-news__category {
     display: flex;
@@ -670,12 +651,6 @@ img {
     padding-block: var(--space-m);
 }
 
-.l-news-list {
-    display: flex;
-    flex-direction: column;
-}
-
-
 @media screen and (max-width:735px) {
     .p-news__box {
         flex-direction: column;
@@ -689,25 +664,21 @@ img {
 
 }
 
-
 /* 事例一覧 */
-
-
-.p-case__category {
+.l-case__category {
     display: flex;
     justify-content: center;
     gap: clamp(1.875rem, 0.775rem + 4.695vw, 5rem);
 }
 
-.p-case__category li {
+.l-case__category li {
     padding: 5px var(--space-s);
 }
 
-.p-case__category li:hover {
+.l-case__category li:hover {
     background-color: var(--reform-green);
     opacity: 0.9;
 }
-
 
 .l-case__cards {
     display: grid;
@@ -732,7 +703,6 @@ img {
 
 
 /* 事例詳細 */
-
 .l-case-det__main {
     display: flex;
     gap: var(--space-l);
