@@ -387,7 +387,7 @@ img {
 
 /* MainVisual */
 .p-mv {
-    background: url(../img/bg.jpg) center center/cover;
+    background: url(../img/bg.webp) center center/cover;
     height: clamp(24.375rem, 15.352rem + 38.498vw, 50rem);
     display: flex;
     flex-direction: column;
