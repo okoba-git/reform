@@ -1,7 +1,7 @@
 // お知らせページ
 
 // お知らせの情報
-const allArray = [
+const newsListArray = [
     { category: 'お知らせ', date: '2025-12-24', title: '冬季休業期間のお知らせ' },
     { category: 'お知らせ', date: '2025-10-08', title: 'マンションリフォーム施工事例を追加しました' },
     { category: 'お得な情報', date: '2025-08-03', title: '水回りリフォーム相談会のご案内' },
@@ -23,45 +23,42 @@ const specialIcon = document.getElementById('special');
 const newsList = document.getElementById('news-area');
 
 
-// カテゴリ別に配列を作る
-const newsArray = allArray.filter(news =>
-    news.category === 'お知らせ');
-const specialArray = allArray.filter(news =>
-    news.category === 'お得な情報');
-
-
-
 //　配列からHTMLを書く関数（全項目）（引数に配列名を入れる）
-function updateNews(array) {
+function renderNewsList(array) {
     let html = '';
     array.forEach((news) => {
-        html += `<div class="c-news-item p-news__box"><dt class="l-top-news__item--head"><p class="c-news-item__icon fz12">${news.category}</p>${news.date}</dt><dd class="c-hover__text"><a href="#">${news.title}</a></dd></div>`
+        html += `<dt class="l-top-news__item--head"><p class="c-news-item__icon fz12">${news.category}</p>${news.date}</dt><dd class="c-hover__text"><a href="#">${news.title}</a></dd>`
     });
     newsList.innerHTML = html;
 }
 
+
+// アイコンを押してその項目ニュースを描画する関数
+function fillterNewsList(icon, category) {
+    // アイコンクリック
+    icon.addEventListener('click', () => {
+        // 該当の項目を表示
+        if (category === 'すべて') {
+            renderNewsList(newsListArray);
+        } else {
+            // カテゴリ別に配列を作る
+            let newsArray = newsListArray.filter(news =>
+                news.category === `${category}`)
+            renderNewsList(newsArray);
+        };
+        // アイコンの色を変える
+        allIcon.style.backgroundColor = '';
+        newsIcon.style.backgroundColor = '';
+        specialIcon.style.backgroundColor = '';
+        icon.style.backgroundColor = '#B0D850';
+    })
+}
+
+
 // 標準時はすべて表示
 allIcon.style.backgroundColor = '#B0D850';
-updateNews(allArray);
+renderNewsList(newsListArray);
 
-
-// アイコンクリックで表示するお知らせを変える
-
-allIcon.addEventListener('click', () => {
-    newsIcon.style.backgroundColor = '';
-    specialIcon.style.backgroundColor = '';
-    allIcon.style.backgroundColor = '#B0D850';
-    updateNews(allArray);
-})
-newsIcon.addEventListener('click', () => {
-    allIcon.style.backgroundColor = '';
-    specialIcon.style.backgroundColor = '';
-    newsIcon.style.backgroundColor = '#B0D850';
-    updateNews(newsArray);
-})
-specialIcon.addEventListener('click', () => {
-    allIcon.style.backgroundColor = '';
-    newsIcon.style.backgroundColor = '';
-    specialIcon.style.backgroundColor = '#B0D850';
-    updateNews(specialArray);
-})
+fillterNewsList(allIcon, 'すべて')
+fillterNewsList(newsIcon, 'お知らせ')
+fillterNewsList(specialIcon, 'お得な情報')
