@@ -1,9 +1,3 @@
-// 施工事例の情報を配列化
-const caseArray =
-    [{ title: "猫とのびのび暮らす家", category: "戸建て", owner: "福岡市N様", img: "case1.jpg", alt: "福岡市のリフォーム事例。壁にキャットタワーがつけられており、黒猫がくつろいでいる。" },
-    { title: "三世代で囲む食卓", category: "戸建て", owner: "福岡市T様", img: "case2.jpg", alt: "福岡市のリフォーム事例。白い部屋に机と椅子がある。机の上には食器類がおかれている。" },
-    { title: "水回りまとめてリフォーム", category: "集合住宅", owner: "古賀市S様", img: "case3.jpg", alt: "古賀市のリフォーム事例。白い壁の部屋。ブラウンの引き出しがある大きな洗面台がある。窓からは青空が見える。" }]
-
 
 // ボタンのID取得
 const allBtn = document.getElementById('all-case');
