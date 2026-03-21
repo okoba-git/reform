@@ -18,7 +18,7 @@ const caseList = document.getElementById('case-list');
 function renderCase(array) {
     let html = '';
     array.forEach(e => {
-        html += `<a href="case/case1.html"><img src="img/${e.img}"alt="${e.alt}" class="p-case__card-img"></a><a href="case/case1.html"><p>【${e.category}】${e.title}</p><p>${e.owner}</p></a>`
+        html += `<li class="p-case__card c-hover__text"><a href="case/case1.html"><img src="img/${e.img}"alt="${e.alt}" class="p-case__card-img"></a><a href="case/case1.html"><p>【${e.category}】${e.title}</p><p>${e.owner}</p></a></li>`
     });
     caseList.innerHTML = html
 }
