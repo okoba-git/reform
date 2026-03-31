@@ -646,14 +646,16 @@ img {
 
 .p-news__box {
     display: flex;
+    flex-direction: column;
     gap: var(--space-l);
     border-bottom: 1px dotted var(--reform-black);
     padding-block: var(--space-m);
 }
 
+.p-news__box li {}
+
 @media screen and (max-width:735px) {
     .p-news__box {
-        flex-direction: column;
         gap: var(--space-s);
     }
 

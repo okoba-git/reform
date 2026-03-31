@@ -12,7 +12,8 @@ const newsList = document.getElementById('news-area');
 function renderNewsList(array) {
     let html = '';
     array.forEach((news) => {
-        html += `<dt class="l-top-news__item--head"><p class="c-news-item__icon fz12">${news.category}</p>${news.date}</dt><dd class="c-hover__text"><a href="#">${news.title}</a></dd>`
+        html += `                <div class="c-news-item p-news__box">
+<dt class="l-top-news__item--head"><p class="c-news-item__icon fz12">${news.category}</p>${news.date}</dt><dd class="c-hover__text"><a href="#">${news.title}</a></dd></div>`
     });
     newsList.innerHTML = html;
 }
